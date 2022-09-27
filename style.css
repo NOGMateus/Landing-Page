@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/*Descrição das cores do projeto*/
+:root {
+    --primary: #0f1b37;
+    --secondary: #f3b675;
+    --tertiary: #F28E16;
+    --text-color: #fcffff;
+    --text-primary: black;
+    --text-secondary: #ffff;
+    --text-tertiary: #95989a;
+  }
+
+*{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+/*DESCRIÇÃO INICIAL*/
+#descricao-inicial{
+    background: linear-gradient(rgba(24, 33, 47, .75), rgba(24, 33, 47, .75)),
+    url("imgs/capa1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  color: var(--text-color);
+}
+#descricao-inicial h2,
+#descricao-inicial .desde{
+    color: var(--tertiary);
+}
+#descricao-inicial h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+#descricao-inicial .sobreescritorio {
+    font-size: 1em;
+    text-transform: uppercase;
+    max-width: 400px;
+    font-weight: bold;
+    margin-bottom: 2em;
+    justify-content: center;
+  }
+  #descricao-inicial p {
+    font-size: 1.5em;
+    margin-bottom: 1.8em;
+  }
+  #descricao-inicial .desde {
+    font-weight:bold;
+  }
+  /*FORMULÁRIO*/
+  #descricao-formulario {
+    background-color: var(--text-tertiary);
+    padding: 4em;
+    max-width: 25%;
+  }
+
+  #descricao-formulario p{
+    font-size: 1.5em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+  }
+  .formulario-elementos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+  }
+  .formulario-elementos label {
+    color: var(--secondary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+  }
+  .formulario-elementos input,
+.formulario-elementos select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border:none;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  /*SECTION - MISSÃO VISÃO E VALORES*/
+  /*Principal da section*/
+  #descricao-empresa h2{
+    /*margin-top: auto;*/
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+  }
+  .pai-mis-vis-val {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .Missao-Visao-Valores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-primary);
+  }
+  .Missao-Visao-Valores .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+  }
+  #missao1 {
+    
+    background-image: url("imgs/target2.jpg");
+  }
+  #visao1 {
+    background-image: url("imgs/visaoteste2.jpg");
+  }
+  
+  #valor1{
+    background-image: url("imgs/valores1.jpg");
+  }
+
+  /*Section da Localização*/
+  #localizacao {
+    height: 500px;
+    background: 
+      url("imgs/fecap1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--tertiary);
+    margin-bottom: 3em;
+  }
+   #endereco,
+   #sobre-localizacao{
+  max-width: 30%;
+}
+#endereco {
+    display: flex;
+  }
+  #endereco i {
+    color: var(--tertiary);
+    font-size: 3em;
+    margin-right: 0.5em;
+  }
+  
+#endereco-detalhe {
+    text-align: left;
+    font-size: 1.3em;
+  }
+  #sobre-localizacao h3 {
+    color: var(--tertiary);
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  #sobre-localizacao p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  /*Section das areas de atuação*/
+  #servicos {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+  }
+  .work img {
+    border-radius: 15px 0 15px 0;
+    width: 50%;
+  }
+  .work h3 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+  #detalhado1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  .detalhe-descricao {
+    width: 100%;
+    padding-left: 2em;
+  }
+  #detalhado3 .detalhe-descricao {
+    justify-self: flex-start;
+  }
+  .detalhe-descricao ul {
+    list-style-position: inside;
+  }
+  .detalhe-descricao ul li {
+    margin-bottom: 0.4em;
+  }
+  .detalhe-descricao ul li:last-child {
+    font-weight: bold;
+  }
+
+  /*SECTION - 2º Contato*/
+  #contato-segundo {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("imgs/contato2.jpg");
+    background-position:top;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+  }
+  #contato-segundo h3 {
+    margin-bottom: 2.5em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  #contato-segundo .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    color:var(--primary);
+    background-color: var(--tertiary);
+  }
+  /*FOOTER*/
+  #footer {
+    text-align: center;
+    color: var(--text-primary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  #footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  #footer span {
+    font-weight: bold;
+  }
+
+  /*-------Responsividade--------------*/
+  @media(max-width: 480px) 
+  {
+    /*section - apresentção e formulário*/
+    #descricao-inicial {
+      flex-direction: column;
+      height: auto;
+    }
+    #descrição1 {
+      padding: 2em;
+    }
+    #descrição1 h2 {
+      margin-bottom: 0.5em;
+    }
+    #descricao-formulario {
+      max-width: 70%;
+      margin-bottom: 2em;
+    }
+    /*Section de missao visao e valores*/
+
+    .pai-mis-vis-val {
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      padding: 2em;
+    }
+    .Missao-Visao-Valores {
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 2em;
+    }
+    /*Section do endereço fecap*/
+    #localizacao {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 2em 0;
+    }
+    #endereco {
+      order: 2;
+      flex-direction: column;
+      max-width: 100%;
+    }
+    #endereco i {
+      margin: 0.3em 0;
+    }
+    #sobre-localizacao {
+      order: 1;
+      max-width: 100%;
+    }
+    #sobre-localizacao h3 {
+      margin-bottom: 0;
+    }
+    #sobre-localizacao p {
+      display: none;
+    }
+    .work {
+      flex-direction: column;
+      margin-bottom: 0.5em;
+      gap: 0;
+    }
+    .work img {
+      width: 100%;
+      margin: 2em 0;
+    }
+    #detalhado1 img {
+      display: none;
+    }
+    .detalhe-descricao {
+      padding: 0;
+    }
+    #detalhado3 img {
+      order: 2;
+    }
+    #detalhado3 .detalhe-descricao {
+      order: 1;
+    }
+    /*section do botao*/
+    #contato-segundo .btn {
+      width: 70%;
+    }
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+
